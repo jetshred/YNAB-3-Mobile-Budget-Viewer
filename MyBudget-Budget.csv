@@ -1,47 +1,4 @@
 Month,Category,Budgeted,Outflows,Category Balance
-"February 2010","Charity : Other",$0.00,$0.00,$0.00
-"February 2010","Charity : Tithing",$0.00,$0.00,$0.00
-"February 2010","Housing : Other",$0.00,$0.00,$0.00
-"February 2010","Housing : Maintenance & Repairs",$0.00,$0.00,$0.00
-"February 2010","Insurance : Homeowner's/Renter's",$0.00,$0.00,$0.00
-"February 2010","Savings : Retirement",$0.00,$0.00,$0.00
-"February 2010","Savings : New Car",$0.00,$0.00,$0.00
-"February 2010","Debt : Banana Republic Credit",$491.25,$0.00,$491.25
-"February 2010","Taxes : Property",$37.19,$37.19,$0.00
-"February 2010","Taxes : Jon's Federal",$0.00,$0.00,$0.00
-"February 2010","Taxes : Jon's State",$0.00,$0.00,$0.00
-"February 2010","Debt : LeAnne's Medical",$0.00,$0.00,$0.00
-"February 2010","Debt : Jon's Mastercard",$0.00,$0.00,$0.00
-"February 2010","Debt : Dell",$0.00,$0.00,$0.00
-"February 2010","Debt : Jon's Discover",$0.00,$0.00,$0.00
-"February 2010","Food : Groceries",$50.00,$76.28,-$26.28
-"February 2010","Food : Restaurants",$25.00,$70.79,-$45.79
-"February 2010","Housing : Mortgage/Rent",$0.00,$0.00,$0.00
-"February 2010","Insurance : Auto",$0.00,$0.00,$0.00
-"February 2010","Insurance : Life",$0.00,$0.00,$0.00
-"February 2010","Pets : Vet",$0.00,$0.00,$0.00
-"February 2010","Pets : Medicine",$0.00,$0.00,$0.00
-"February 2010","Pets : Food",$0.00,$0.00,$0.00
-"February 2010","Personal : Prescriptions, Medicine",$5.90,$20.74,-$14.84
-"February 2010","Personal : Subscriptions & Dues",$59.98,$59.98,$0.00
-"February 2010","Personal : Miscellaneous",$0.00,$43.08,-$43.08
-"February 2010","Personal : Doctor, Dentist",$0.00,$0.00,$0.00
-"February 2010","Personal : Toiletries",$0.00,$0.00,$0.00
-"February 2010","Personal : School",$0.00,$0.00,$0.00
-"February 2010","Personal : Gifts",$0.00,$0.00,$0.00
-"February 2010","Personal : Clothing",$0.00,$0.00,$0.00
-"February 2010","Transportation : Car Payment",$0.00,$0.00,$0.00
-"February 2010","Transportation : Gas",$30.00,$62.04,-$32.04
-"February 2010","Transportation : Repairs & Maintenance",$0.00,$0.00,$0.00
-"February 2010","Utilities : Electricity",$0.00,$0.00,$0.00
-"February 2010","Utilities : Phone & Internet",$0.00,$497.61,-$497.61
-"February 2010","Utilities : Water",$0.00,$0.00,$0.00
-"February 2010","Work : Jon",$0.00,$159.79,-$159.79
-"February 2010","Recreation : His",$0.00,$0.00,$0.00
-"February 2010","Recreation : Hers",$0.00,$0.00,$0.00
-"February 2010","Recreation : Entertainment",$0.00,$0.00,$0.00
-"February 2010","Recreation : Vacation",$0.00,$0.00,$0.00
-"February 2010","Savings : Emergency Fund",$0.00,$0.00,$0.00
 
 "March 2010","Charity : Other",$0.00,$0.00,$0.00
 "March 2010","Charity : Tithing",$0.00,$0.00,$0.00
@@ -52,12 +9,7 @@ Month,Category,Budgeted,Outflows,Category Balance
 "March 2010","Savings : New Car",$0.00,$0.00,$0.00
 "March 2010","Debt : Banana Republic Credit",$0.00,$491.25,$0.00
 "March 2010","Taxes : Property",$0.00,$0.00,$0.00
-"March 2010","Taxes : Jon's Federal",$866.50,$0.00,$866.50
-"March 2010","Taxes : Jon's State",$222.00,$0.00,$222.00
 "March 2010","Debt : LeAnne's Medical",$30.00,$0.00,$30.00
-"March 2010","Debt : Jon's Mastercard",$0.00,$0.00,$0.00
-"March 2010","Debt : Dell",$40.00,$0.00,$40.00
-"March 2010","Debt : Jon's Discover",$39.00,$39.00,$0.00
 "March 2010","Food : Groceries",$250.00,$88.33,$161.67
 "March 2010","Food : Restaurants",$250.00,$64.05,$185.95
 "March 2010","Housing : Mortgage/Rent",$779.00,$779.00,$0.00
@@ -85,93 +37,5 @@ Month,Category,Budgeted,Outflows,Category Balance
 "March 2010","Recreation : Hers",$0.00,$0.00,$0.00
 "March 2010","Recreation : Entertainment",$0.00,$25.75,-$25.75
 "March 2010","Recreation : Vacation",$0.00,$0.00,$0.00
-"March 2010","Savings : Emergency Fund",$1800.00,$0.00,$1800.00
 
-"April 2010","Charity : Other",$0.00,$0.00,$0.00
-"April 2010","Charity : Tithing",$0.00,$0.00,$0.00
-"April 2010","Housing : Other",$0.00,$0.00,$0.00
-"April 2010","Housing : Maintenance & Repairs",$0.00,$0.00,$0.00
-"April 2010","Insurance : Homeowner's/Renter's",$0.00,$0.00,$0.00
-"April 2010","Savings : Retirement",$0.00,$0.00,$0.00
-"April 2010","Savings : New Car",$0.00,$0.00,$0.00
-"April 2010","Debt : Banana Republic Credit",$0.00,$0.00,$0.00
-"April 2010","Taxes : Property",$0.00,$0.00,$0.00
-"April 2010","Taxes : Jon's Federal",$866.50,$0.00,$1733.00
-"April 2010","Taxes : Jon's State",$222.00,$0.00,$444.00
-"April 2010","Debt : LeAnne's Medical",$30.00,$0.00,$60.00
-"April 2010","Debt : Jon's Mastercard",$80.00,$0.00,$80.00
-"April 2010","Debt : Dell",$40.00,$0.00,$80.00
-"April 2010","Debt : Jon's Discover",$39.00,$0.00,$39.00
-"April 2010","Food : Groceries",$250.00,$0.00,$411.67
-"April 2010","Food : Restaurants",$250.00,$0.00,$435.95
-"April 2010","Housing : Mortgage/Rent",$779.00,$0.00,$779.00
-"April 2010","Insurance : Auto",$136.19,$0.00,$272.38
-"April 2010","Insurance : Life",$4.33,$0.00,$8.66
-"April 2010","Pets : Vet",$0.00,$0.00,$0.00
-"April 2010","Pets : Medicine",$0.00,$0.00,$0.00
-"April 2010","Pets : Food",$0.00,$0.00,$0.00
-"April 2010","Personal : Prescriptions, Medicine",$15.90,$0.00,$15.90
-"April 2010","Personal : Subscriptions & Dues",$11.00,$0.00,$22.00
-"April 2010","Personal : Miscellaneous",$0.00,$0.00,$0.00
-"April 2010","Personal : Doctor, Dentist",$0.00,$0.00,$0.00
-"April 2010","Personal : Toiletries",$25.00,$0.00,$50.00
-"April 2010","Personal : School",$800.00,$0.00,$800.00
-"April 2010","Personal : Gifts",$0.00,$0.00,$0.00
-"April 2010","Personal : Clothing",$0.00,$0.00,$0.00
-"April 2010","Transportation : Car Payment",$143.00,$0.00,$286.00
-"April 2010","Transportation : Gas",$120.00,$0.00,$204.88
-"April 2010","Transportation : Repairs & Maintenance",$0.00,$0.00,$0.00
-"April 2010","Utilities : Electricity",$100.00,$0.00,$181.15
-"April 2010","Utilities : Phone & Internet",$180.00,$0.00,$295.10
-"April 2010","Utilities : Water",$30.87,$0.00,$30.87
-"April 2010","Work : Jon",$0.00,$0.00,-$234.65
-"April 2010","Recreation : His",$0.00,$0.00,$0.00
-"April 2010","Recreation : Hers",$0.00,$0.00,$0.00
-"April 2010","Recreation : Entertainment",$25.00,$0.00,$25.00
-"April 2010","Recreation : Vacation",$0.00,$0.00,$0.00
-"April 2010","Savings : Emergency Fund",$0.00,$0.00,$1800.00
-
-"May 2010","Charity : Other",$0.00,$0.00,$0.00
-"May 2010","Charity : Tithing",$0.00,$0.00,$0.00
-"May 2010","Housing : Other",$0.00,$0.00,$0.00
-"May 2010","Housing : Maintenance & Repairs",$0.00,$0.00,$0.00
-"May 2010","Insurance : Homeowner's/Renter's",$0.00,$0.00,$0.00
-"May 2010","Savings : Retirement",$0.00,$0.00,$0.00
-"May 2010","Savings : New Car",$0.00,$0.00,$0.00
-"May 2010","Debt : Banana Republic Credit",$0.00,$0.00,$0.00
-"May 2010","Taxes : Property",$0.00,$0.00,$0.00
-"May 2010","Taxes : Jon's Federal",$866.50,$0.00,$2599.50
-"May 2010","Taxes : Jon's State",$222.00,$0.00,$666.00
-"May 2010","Debt : LeAnne's Medical",$30.00,$0.00,$90.00
-"May 2010","Debt : Jon's Mastercard",$80.00,$0.00,$160.00
-"May 2010","Debt : Dell",$40.00,$0.00,$120.00
-"May 2010","Debt : Jon's Discover",$39.00,$0.00,$78.00
-"May 2010","Food : Groceries",$250.00,$0.00,$661.67
-"May 2010","Food : Restaurants",$250.00,$0.00,$685.95
-"May 2010","Housing : Mortgage/Rent",$779.00,$0.00,$1558.00
-"May 2010","Insurance : Auto",$136.19,$0.00,$408.57
-"May 2010","Insurance : Life",$4.33,$0.00,$12.99
-"May 2010","Pets : Vet",$0.00,$0.00,$0.00
-"May 2010","Pets : Medicine",$0.00,$0.00,$0.00
-"May 2010","Pets : Food",$0.00,$0.00,$0.00
-"May 2010","Personal : Prescriptions, Medicine",$15.90,$0.00,$31.80
-"May 2010","Personal : Subscriptions & Dues",$11.00,$0.00,$33.00
-"May 2010","Personal : Miscellaneous",$0.00,$0.00,$0.00
-"May 2010","Personal : Doctor, Dentist",$0.00,$0.00,$0.00
-"May 2010","Personal : Toiletries",$25.00,$0.00,$75.00
-"May 2010","Personal : School",$800.00,$0.00,$1600.00
-"May 2010","Personal : Gifts",$0.00,$0.00,$0.00
-"May 2010","Personal : Clothing",$0.00,$0.00,$0.00
-"May 2010","Transportation : Car Payment",$143.00,$0.00,$429.00
-"May 2010","Transportation : Gas",$120.00,$0.00,$324.88
-"May 2010","Transportation : Repairs & Maintenance",$0.00,$0.00,$0.00
-"May 2010","Utilities : Electricity",$100.00,$0.00,$281.15
-"May 2010","Utilities : Phone & Internet",$180.00,$0.00,$475.10
-"May 2010","Utilities : Water",$30.87,$0.00,$61.74
-"May 2010","Work : Jon",$0.00,$0.00,-$234.65
-"May 2010","Recreation : His",$0.00,$0.00,$0.00
-"May 2010","Recreation : Hers",$0.00,$0.00,$0.00
-"May 2010","Recreation : Entertainment",$25.00,$0.00,$50.00
-"May 2010","Recreation : Vacation",$0.00,$0.00,$0.00
-"May 2010","Savings : Emergency Fund",$0.00,$0.00,$1800.00
 
