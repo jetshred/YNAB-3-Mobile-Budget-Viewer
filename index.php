@@ -80,7 +80,8 @@
 		
 </div>
 <div id="footer">
-	<a href="http://iwebkit.net">&copy; 2010 Jon Hester</a></div>
+	Made by <a href="mailto:jetshred@gmail.com">jetshred</a>
+	</div>
 
 </body>
 
