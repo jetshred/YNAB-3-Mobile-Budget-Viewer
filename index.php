@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="index,follow" name="robots" />
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+<link href="pics/homescreen.gif" rel="apple-touch-icon" />
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="javascript/functions.js" type="text/javascript"></script>
+<title>Family Budget</title>
+<meta content="iPod,iPhone,Webkit,iWebkit,Website,Create,mobile,Tutorial,free" name="Keywords" />
+<meta content="Create the classical iphone list feeling with these lists. Add images to add something more to your content and please the eye of your users" name="description" />
+</head>
+
+<body class="list">
+
+<div id="topbar">
+	<div id="leftnav">
+		<!-- <a href="index.php"><img alt="home" src="images/home.png" /></a> --></div>
+	<div id="rightnav">
+		<!-- <a href="">n/a</a> -->
+	</div>
+		<?php
+		echo "<div id=\"title\">",date('F'), " Budget</div>
+	</div>
+	<div id=\"content\">
+		<ul>";
+		function convertToInt($string) {
+		    $y = ltrim($string, '$');
+		    $z = 0 + $y;
+		    return $z;
+		}
+		echo "<table>";
+		$handle = fopen("MyBudget-Budget.csv", "r");
+		$data = fgetcsv($handle, 1000, ",");
+		# data rows:
+		while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
+		{
+
+		$month=$data[0];
+		$category=$data[1];
+		$budgeted=$data[2];
+		$outflows=$data[3];
+		$balance=$data[4];
+
+		$nbudgeted = convertToInt($budgeted);
+		$noutflows = convertToInt($outflows);
+
+		if ($month == date('F Y') && $budgeted != "$0.00") {
+			$percent = $noutflows / $nbudgeted * 100;
+			$otherpercent = 100 - $percent;
+			echo "<li class=\"title\">$category</li>";
+				if ($percent <= "100"){
+					echo "
+					<li class=\"withimage\">
+					<a class=\"noeffect\" href=\"\">
+					<img alt=\"test\" src=\"http://chart.apis.google.com/chart?cht=p&chd=t:$otherpercent,$percent&chs=170x170&chco=00FF00|FF0000\" /><span class=\"name\">
+					$balance remaining       
+					</span><span class=\"comment\">$budgeted budgeted - $outflows spent</span></a></li>
+					\n";
+					}
+				else {
+					echo "
+					<li class=\"withimage2\">
+					<a class=\"noeffect\" href=\"\">
+					<img alt=\"test\" src=\"http://chart.apis.google.com/chart?cht=p&chd=t:0,100&chs=170x170&chco=00FF00|FF0000&chf=bg,s,65432100\" /><span class=\"name\">
+					$balance remaining       
+					</span><span class=\"comment\">$budgeted budgeted - $outflows spent</span></a></li>
+					\n";
+					
+				}
+			}
+		
+	}
+		echo "</table>\n";
+		?>
+		
+		
+</div>
+<div id="footer">
+	<a href="http://iwebkit.net">&copy; 2010 Jon Hester</a></div>
+
+</body>
+
+</html>
