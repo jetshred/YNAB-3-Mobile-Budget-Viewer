@@ -28,7 +28,7 @@
 	<div id=\"content\">
 		<ul>";
 		function convertToInt($string) {
-		    $y = ltrim($string, '$');
+		    $y = str_replace('$','',$string);
 		    $z = 0 + $y;
 		    return $z;
 		}
@@ -47,12 +47,13 @@
 
 		$nbudgeted = convertToInt($budgeted);
 		$noutflows = convertToInt($outflows);
+		$nbalance = convertToInt($balance);
 
 		if ($month == date('F Y') && $budgeted != "$0.00") {
 			$percent = $noutflows / $nbudgeted * 100;
 			$otherpercent = 100 - $percent;
 			echo "<li class=\"title\">$category</li>";
-				if ($percent <= "100"){
+				if ($nbalance >= 0){
 					echo "
 					<li class=\"withimage\">
 					<a class=\"noeffect\" href=\"\">
