@@ -10,8 +10,6 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <script src="javascript/functions.js" type="text/javascript"></script>
 <title>Family Budget</title>
-<meta content="iPod,iPhone,Webkit,iWebkit,Website,Create,mobile,Tutorial,free" name="Keywords" />
-<meta content="Create the classical iphone list feeling with these lists. Add images to add something more to your content and please the eye of your users" name="description" />
 </head>
 
 <body class="list">
