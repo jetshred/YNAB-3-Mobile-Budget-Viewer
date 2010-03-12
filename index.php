@@ -2,13 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<script language=javascript>
-	<!--
-	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)))
-	{
-	location.replace("iphone.php");
-	}
-	-->
-	</script>
+		<!--
+		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/Safari/i)))
+		{
+		location.replace("iphone.php");
+		}
+		-->
+		</script>
+	
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
 <title>YNAB Budget</title>
