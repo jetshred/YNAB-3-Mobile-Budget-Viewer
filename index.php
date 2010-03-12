@@ -5,7 +5,7 @@
 <meta content="yes" name="apple-mobile-web-app-capable" />
 <meta content="index,follow" name="robots" />
 <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
-<link href="pics/homescreen.gif" rel="apple-touch-icon" />
+<link href="pics/appletouchicon.png" rel="apple-touch-icon" />
 <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <script src="javascript/functions.js" type="text/javascript"></script>
