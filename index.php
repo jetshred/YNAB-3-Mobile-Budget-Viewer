@@ -1,87 +1,116 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
-<meta content="yes" name="apple-mobile-web-app-capable" />
-<meta content="index,follow" name="robots" />
-<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
-<link href="pics/appletouchicon.png" rel="apple-touch-icon" />
-<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<script src="javascript/functions.js" type="text/javascript"></script>
-<title>Family Budget</title>
-</head>
-
-<body class="list">
-
-<div id="topbar">
-	<div id="leftnav">
-		<!-- <a href="index.php"><img alt="home" src="images/home.png" /></a> --></div>
-	<div id="rightnav">
-		<!-- <a href="">n/a</a> -->
-	</div>
-		<?php
-		echo "<div id=\"title\">",date('F'), " Budget</div>
-	</div>
-	<div id=\"content\">
-		<ul>";
-		function convertToInt($string) {
-		    $y = str_replace('$','',$string);
-		    $z = 0 + $y;
-		    return $z;
-		}
-		echo "<table>";
-		$handle = fopen("MyBudget-Budget.csv", "r");
-		$data = fgetcsv($handle, 1000, ",");
-		# data rows:
-		while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
-		{
-
-		$month=$data[0];
-		$category=$data[1];
-		$budgeted=$data[2];
-		$outflows=$data[3];
-		$balance=$data[4];
-
-		$nbudgeted = convertToInt($budgeted);
-		$noutflows = convertToInt($outflows);
-		$nbalance = convertToInt($balance);
-
-		if ($month == date('F Y') && $budgeted != "$0.00") {
-			$percent = $noutflows / $nbudgeted * 100;
-			$otherpercent = 100 - $percent;
-			echo "<li class=\"title\">$category</li>";
-				if ($nbalance >= 0){
-					echo "
-					<li class=\"withimage\">
-					<a class=\"noeffect\" href=\"\">
-					<img alt=\"test\" src=\"http://chart.apis.google.com/chart?cht=p&chd=t:$otherpercent,$percent&chs=170x170&chco=00FF00|FF0000\" /><span class=\"name\">
-					$balance remaining       
-					</span><span class=\"comment\">$budgeted budgeted - $outflows spent</span></a></li>
-					\n";
-					}
-				else {
-					echo "
-					<li class=\"withimage2\">
-					<a class=\"noeffect\" href=\"\">
-					<img alt=\"test\" src=\"http://chart.apis.google.com/chart?cht=p&chd=t:0,100&chs=170x170&chco=00FF00|FF0000&chf=bg,s,65432100\" /><span class=\"name\">
-					$balance remaining       
-					</span><span class=\"comment\">$budgeted budgeted - $outflows spent</span></a></li>
-					\n";
-					
-				}
-			}
-		
+	<script language=javascript>
+	<!--
+	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)))
+	{
+	location.replace("iphone.php");
 	}
-		echo "</table>\n";
-		?>
-		
-		
+	-->
+	</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+<title>YNAB Budget</title>
+</head>
+<body style="color:#333;font-size:13px;font-family:sans-serif;margin:0;background-color:#fff" >
+<?php
+echo "<div style=\"font-size:140%;padding:3px\">",date('F'), " Budget
+</div>";
+function convertToInt($string) {
+$y = str_replace('$','',$string);
+$z = 0 + $y;
+return $z;
+}
+$handle = fopen("MyBudget-Budget.csv", "r");
+$data = fgetcsv($handle, 1000, ",");
+# data rows:
+while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
+{
+ 
+$month=$data[0];
+$category=$data[1];
+$budgeted=$data[2];
+$outflows=$data[3];
+$balance=$data[4];
+ 
+$nbudgeted = convertToInt($budgeted);
+$noutflows = convertToInt($outflows);
+$nbalance = convertToInt($balance);
+ 
+if ($month == date('F Y') && $budgeted != "$0.00") {
+$percent = $noutflows / $nbudgeted * 100;
+$otherpercent = 100 - $percent;
+ 
+if ($nbalance >= 0){
+echo "
+<hr size=\"1\" noshade='noshade' color=\"#999\" style=\"width:100%;height:1px;margin:2px 0;padding:0;color:#999;background:#999;border:none;\" />
+<strong>$category</strong>
+<div>
+<table width=\"100%\" >
+<tr valign=\"top\">
+<td style=\"font-size:0px\" width=\"50\">
+<img src=\"http://chart.apis.google.com/chart?cht=p&chd=t:$otherpercent,$percent&chs=90x90&chco=00FF00|FF0000\" alt=\"Pie Graph\" width=\"50\" height=\"50\" style=\"border:0;margin:0px;\" />
+</td>
+ 
+<td style=\"width:100%;font-size:13px;padding-left:2px\">
+<div style=\"font-size:140%;padding-bottom:1px;margin-top:10px\" >
+<strong>$balance left</strong>
 </div>
-<div id="footer">
-	Made by <a href="mailto:jetshred@gmail.com">jetshred</a>
-	</div>
-
+<div style=\"color:#333;font-size:80%\">$budgeted budgeted - $outflows spent</div>
+</td>
+</tr>
+</table>
+<hr size=\"1\" noshade='noshade' color=\"#999\" style=\"width:100%;height:1px;margin:2px 0;padding:0;color:#999;background:#999;border:none;\" />
+ 
+ 
+</div>
+<hr size=\"1\" noshade='noshade' color=\"#ffffff\" style=\"width:100%;height:7px;margin:2px 0;padding:0;color:#999;background:#fff;border:none;\" />
+\n";
+}
+else {
+echo "
+<div
+style=\"border-top:0px solid #999;background:red;color:white\">
+<hr size=\"1\" noshade='noshade' color=\"#999\" style=\"width:100%;height:1px;margin:2px 0;padding:0;color:#999;background:#999;border:none;\" />
+<strong>$category</strong>
+<div>
+<table width=\"100%\" >
+<tr valign=\"top\">
+<td style=\"font-size:0px\" width=\"50\">
+<img src=\"http://chart.apis.google.com/chart?cht=p&chd=t:0,100&chs=90x90&chco=00FF00|FF0000&chf=bg,s,65432100\" alt=\"Pie Graph\" width=\"50\" height=\"50\" style=\"border:0;margin:0px;\" />
+</td>
+ 
+<td style=\"width:100%;font-size:13px;padding-left:2px;color:white;\">
+<div style=\"font-size:140%;padding-bottom:1px;margin-top:10px\" >
+<strong>$balance left</strong>
+</div>
+<div style=\"color:#333;font-size:80%;color:white;\">$budgeted budgeted - $outflows spent</div>
+</td>
+</tr>
+</table>
+<hr size=\"1\" noshade='noshade' color=\"#999\" style=\"width:100%;height:1px;margin:2px 0;padding:0;color:#999;background:#999;border:none;\" />
+ 
+ 
+</div>
+</div>
+<hr size=\"1\" noshade='noshade' color=\"#ffffff\" style=\"width:100%;height:7px;margin:2px 0;padding:0;color:#999;background:#fff;border:none;\" />
+\n";
+ 
+}
+}
+ 
+}
+echo "\n";
+?>
+ 
+ 
+<div
+style="border-top:1px solid #999;font-size:80%;background:#EEE;text-align:center">
+<br/>
+<div>created by <a href="mailto:jetshred@gmail.com">jetshred</a></div>
+ 
+<br/>
+</div>
 </body>
-
 </html>
