@@ -31,15 +31,17 @@ while (($data = fgetcsv($handle, 1000, ",")) !== FALSE)
  
 $month=$data[0];
 $category=$data[1];
-$budgeted=$data[2];
-$outflows=$data[3];
-$balance=$data[4];
+$mastercat=$data[2];
+$subcat=$data[3];
+$budgeted=$data[4];
+$outflows=$data[5];
+$balance=$data[6];
  
 $nbudgeted = convertToInt($budgeted);
 $noutflows = convertToInt($outflows);
 $nbalance = convertToInt($balance);
  
-if ($month == date('F Y') && $budgeted != "$0.00") {
+if ($month == date('F Y') && $budgeted != "$0.00" && $mastercat != "Hidden Categories") {
 $percent = $noutflows / $nbudgeted * 100;
 $otherpercent = 100 - $percent;
  
